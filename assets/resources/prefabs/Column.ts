@@ -109,7 +109,7 @@ export class Column extends Component {
      */
     async startSpin() {
         //根据列号设置延迟,有先后开始滚动的效果
-        // await Core.sleep(Core.currStartDelay * this.index);
+        await Core.sleep(Core.currStartDelay * this.index);
         this.status = ColumnStatus.StartUp;
         //设置成模糊素材
         // this.node.children.forEach((cell_node: Node) => {
